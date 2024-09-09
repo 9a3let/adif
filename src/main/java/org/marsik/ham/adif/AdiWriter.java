@@ -317,7 +317,7 @@ public class AdiWriter {
 
     public void append(AdifHeader header) {
         append("adif_ver", header.getVersion());
-        append("programid", getClass().getCanonicalName());
+        append("programid", header.getProgramId());
         appendEndOfHeader();
     }
 }
